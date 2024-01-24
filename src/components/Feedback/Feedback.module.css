@@ -1,0 +1,29 @@
+button {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  transition-duration: 200ms;
+  border-radius: 5px;
+  border-style: hidden;
+  padding: 5px 10px;
+}
+button:nth-child(1) {
+  border: solid;
+  border-color: green;
+  background-color: white;
+}
+button:nth-child(2) {
+  border: solid;
+  border-color: yellow;
+  background-color: white;
+}
+button:nth-child(3) {
+  border: solid;
+  border-color: red;
+  background-color: white;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
