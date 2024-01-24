@@ -1,16 +1,14 @@
 import './Feedback.module.css';
 
-export const Feedback = ({ options, onLeaveFeedback }) => {
-  const stateArr = Object.keys(options);
-
+export const Feedback = ({ options, updateFeedback }) => {
   return (
     <div>
-      {stateArr.map(option => (
+      {options.map(option => (
         <button
           key={option}
           type="button"
           name={option}
-          onClick={() => onLeaveFeedback(option)}
+          onClick={updateFeedback}
         >
           {option}
         </button>
