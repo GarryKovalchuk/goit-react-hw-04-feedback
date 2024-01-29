@@ -9,9 +9,9 @@ export const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const updateFeedback = e => {
+  const updateFeedback = name => {
     // console.log(e.target.name, e.target.value);
-    const { name } = e.target;
+
     switch (name) {
       case 'good':
         setGood(good + 1);
